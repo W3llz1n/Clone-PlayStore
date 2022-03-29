@@ -43,13 +43,14 @@ const estilo = StyleSheet.create({
         fontWeight:'bold'
     },
     botoes:{
-        padding:5,
+        padding:10,
         width:'45%',
         marginHorizontal: 5,
         alignItems:'center',
         justifyContent:'flex-start',
         fontSize:12,
         flexDirection:'row',
+        borderRadius: 20,
     }
 
 
