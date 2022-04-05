@@ -2,7 +2,12 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 import Cabecalho from "./src/components/cabecalho";
 import Botao from "./src/components/botao";
 import Dados from "./dados/dadosJogo";
+import DadosL from "./dados/dadosLivros";
 import Jogos from "./src/components/jogos/jogos";
+import DadosAp from "./dados/dadosApp";
+import Apps from "./src/components/App/Apps"
+import Livros from "./src/components/livros/livros";
+
 
 
 export default function App() {
@@ -30,9 +35,9 @@ export default function App() {
 
     <View>
 
-    <View>
-      <Text>Jogos</Text>
-    </View>
+        <View>
+          <Text style={estilo.titulo}>Jogos</Text>
+        </View>
     
     <FlatList
     horizontal={true}
@@ -50,6 +55,60 @@ export default function App() {
 
     </View>
 
+    <View>
+
+        <View>
+          <Text style={estilo.titulo}>Livros</Text>
+        </View>
+    
+    <FlatList
+    horizontal={true}
+    data = {DadosL}
+    keyExtractor = {(item) => item.id}
+    renderItem = {({item}) => (
+
+      <Livros
+      titulo ={item.nome}
+      imagem ={item.imagem}
+      valor ={item.valor}
+      />
+    )}
+    ></FlatList>
+
+    </View>
+
+    <View>
+
+        <View>
+          <Text style={estilo.titulo}>Apps</Text>
+        </View>
+    
+    <FlatList
+    horizontal={true}
+    data = {DadosAp}
+    keyExtractor = {(item) => item.id}
+    renderItem = {({item}) => (
+
+      <Apps
+      titulo ={item.nome}
+      imagem ={item.imagem}
+      valor ={item.valor}
+      />
+    )}
+    ></FlatList>
+
+    </View>
+
      </View>
   );
 }
+
+const estilo = StyleSheet.create({
+  titulo:{
+    padding:15,
+    fontSize:20,
+    fontWeight:'bold'
+  }
+
+
+});
