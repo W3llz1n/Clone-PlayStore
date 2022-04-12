@@ -10,35 +10,42 @@ const APP = [
         id: "02",
         nome: "Facebook",
         valor: "Gratuito",
-        imagem: "solo.webp"
+        imagem: "facebook.webp"
 
     },
     {
         id: "03",
-        nome: "Primeito Último beijo",
-        valor: "150.50",
-        imagem: "Primeiro-ultimo-beijo.jpg"
+        nome: "Instagram",
+        valor: "Gratuito",
+        imagem: "instagram.jpg"
 
     },
     {
         id: "04",
-        nome: "O Mago - Aprendiz",
-        valor: "49.59",
-        imagem: "o-mago-aprendiz.jpg"
+        nome: "Tik Tok",
+        valor: "Gratuito",
+        imagem: "tiktok.png"
 
     },
     {
         id: "05",
-        nome: "O Mago - Mestre",
-        valor: "132.70",
-        imagem: "o-mago-mestre.jpg"
+        nome: " Spotify",
+        valor: "Gratuito",
+        imagem: "spotify.jpg"
 
     },
     {
         id: "06",
-        nome: "O Milagre da Manhã",
-        valor: "200,00",
-        imagem: "o-milagre-do-amanha.jpg"
+        nome: " Youtube ",
+        valor: "Gratuito",
+        imagem: "youtube.jpg"
+
+    },
+    {
+        id: "07",
+        nome: "Telegram",
+        valor: "Gratuito",
+        imagem: "telegram.jpg"
 
     }
 

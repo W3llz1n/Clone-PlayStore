@@ -1,16 +1,24 @@
 import React from "react";
 import {View,  TouchableOpacity, StyleSheet, Text, Image} from "react-native";
 
-export default function livros({titulo, valor, imagem}){
+export default function jogos({titulo, valor, imagem}){
+
+    function filterDesc(desc){
+        if(desc.length < 27){
+            return desc;
+        }
+        return `${desc.substring(0, 18)}...`;
+    }
+
     return (
         <>
-        <TouchableOpacity style={estilo.containerLivros}>
+        <TouchableOpacity style={estilo.containerJogos}>
             <Image
                 style={estilo.images}
                 source={require(`../../../assets/${imagem}`)}
             />
 
-            <Text style={estilo.titulo}>{titulo}</Text>
+            <Text style={estilo.titulo}>{filterDesc(titulo)}</Text>
             <Text style={estilo.valor}>{valor}</Text>
 
         </TouchableOpacity>
@@ -19,7 +27,7 @@ export default function livros({titulo, valor, imagem}){
 }
 
 const estilo = StyleSheet.create({
-    containerLivros:{
+    containerJogos:{
         backgroundColor: "#DCDCDC",
         borderRadius: 10,
         marginTop: 8,
@@ -37,7 +45,7 @@ const estilo = StyleSheet.create({
       fontWeight: 8,  
     },
     valor: {
-        color: "balck",
+        color: "black",
         fontSize: 12,
         marginLeft: 29,
         marginTop: 2,

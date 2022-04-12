@@ -2,6 +2,14 @@ import React from "react";
 import {View,  TouchableOpacity, StyleSheet, Text, Image} from "react-native";
 
 export default function jogos({titulo, valor, imagem}){
+
+    function filterDesc(desc){
+        if(desc.length < 27){
+            return desc;
+        }
+        return `${desc.substring(0, 18)}...`;
+    }
+
     return (
         <>
         <TouchableOpacity style={estilo.containerJogos}>
@@ -9,9 +17,11 @@ export default function jogos({titulo, valor, imagem}){
                 style={estilo.images}
                 source={require(`../../../assets/${imagem}`)}
             />
-
-            <Text style={estilo.titulo}>{titulo}</Text>
-            <Text style={estilo.valor}>{valor}</Text>
+            <Text style={estilo.titulo}>{filterDesc(titulo)}</Text>
+            <View styly={estilo.infovalor}>
+                <Text style={estilo.valor}>{valor}</Text>
+            </View>
+            
 
         </TouchableOpacity>
         </>
@@ -26,10 +36,12 @@ const estilo = StyleSheet.create({
         padding: 10,
         margin: 2,
         alignItems: "center",
-        justifyContent: "space-between",
-        width: 100,
-        height: 150,
+        justifyContent:"space-between",
+        width: 300,
+        height: 350,
         marginLeft: 8,
+        borderWidth:2,
+        borderColor:"#228693",
     },
     titulo:{
       color: "black",
@@ -37,15 +49,15 @@ const estilo = StyleSheet.create({
       fontWeight: 8,  
     },
     valor: {
-        color: "balck",
+        width: "100%",
+        color: "#228693",
         fontSize: 12,
-        marginLeft: 29,
         marginTop: 2,
         fontWeight: "bold",
     },
     images:{
         width: "100%",
-        height: 75,
+        height: "85%",
         borderRadius: 3,
     },
 });

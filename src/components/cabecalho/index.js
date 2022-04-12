@@ -18,7 +18,7 @@ return(
 }
 const estilo = StyleSheet.create({
     header:{
-        backgroundColor:'#9400D3',
+        backgroundColor:'#042434',
         width:'100%',
         padding:20,
         alignItems:'center',

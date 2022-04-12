@@ -42,5 +42,5 @@ const LIVROS = [
 
     }
 
-    ]
+]
 export default LIVROS;
