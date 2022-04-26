@@ -22,7 +22,7 @@ function Routes() {
            component={Jogos} 
            options={{
             headerStyle:{
-            backgroundColor: "#042434"
+            backgroundColor: "#262223"
           },
           headerTintColor:"#fff",
           headerRight: () =>(

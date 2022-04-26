@@ -21,7 +21,7 @@ export default function Home() {
 const Navigator = useNavigation();
 
   return (
-    <View style={{backgroundColor:'#BFDDDE', flex:1, justifyContent:"center"}}>
+    <View style={{backgroundColor:'#FDEB5C', flex:1, justifyContent:"center"}}>
 
       <Cabecalho></Cabecalho>
 
@@ -138,14 +138,14 @@ const estilo = StyleSheet.create({
     marginBottom:15,
     fontSize:20,
     fontWeight:'bold',
-    color:"#042434"
+    color:"#D94C2A"
   },
   contentCard:{
     padding:10
   },
   tituloL:{
     fontSize:25,
-    color:"#042434",
+    color:"#D94C2A",
     marginBottom: 20,
     fontWeight:'bold'
   },

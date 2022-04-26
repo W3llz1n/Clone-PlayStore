@@ -30,7 +30,7 @@ export default function jogos({titulo, valor, imagem}){
 
 const estilo = StyleSheet.create({
     containerJogos:{
-        backgroundColor: "#DCDCDC",
+        backgroundColor: "#262223",
         borderRadius: 10,
         marginTop: 8,
         padding: 10,
@@ -41,16 +41,16 @@ const estilo = StyleSheet.create({
         height: 350,
         marginLeft: 8,
         borderWidth:2,
-        borderColor:"#228693",
+        borderColor:"#D94C2A",
     },
     titulo:{
-      color: "black",
+      color: "#FFF",
       fontSize: 15,
       fontWeight: 8,  
     },
     valor: {
         width: "100%",
-        color: "#228693",
+        color: "#D94C2A",
         fontSize: 12,
         marginTop: 2,
         fontWeight: "bold",

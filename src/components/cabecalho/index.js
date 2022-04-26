@@ -9,7 +9,7 @@ return(
     <View style={estilo.header}>
         <Ionicons name="menu" size={24} color="white" />
 
-        <Text style ={estilo.Texto}> Play store </Text>
+        <Text style ={estilo.Texto}> Dark Store </Text>
        
         <Ionicons name="ios-search-sharp" size={24} color="white" />
     </View>
@@ -18,7 +18,7 @@ return(
 }
 const estilo = StyleSheet.create({
     header:{
-        backgroundColor:'#042434',
+        backgroundColor:'#262223',
         width:'100%',
         padding:20,
         alignItems:'center',
@@ -28,7 +28,7 @@ const estilo = StyleSheet.create({
 
     },
     Texto:{
-        color:'black',
+        color:'#fff',
         fontSize:20,
         fontWeight:'bold'
     }

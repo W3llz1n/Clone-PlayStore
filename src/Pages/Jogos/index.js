@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 
 export default function Jogos() {
  return (
-   <View>
-       <Text>Olá amigos</Text>
+   <View style={{backgroundColor:'#FDEB5C', flex:1}}>
+     <View></View>
    </View>
   );
 }

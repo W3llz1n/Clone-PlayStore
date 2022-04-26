@@ -35,7 +35,7 @@ const estilo = StyleSheet.create({
         fontSize:12,
         flexDirection:'row',
         borderRadius: 20,
-        backgroundColor: '#228693'
+        backgroundColor: '#D94C2A'
     },
 
     textBotao:{
