@@ -1,5 +1,6 @@
 import { FlatList, StyleSheet, Text, View, ScrollView } from "react-native";
 import {useNavigation} from '@react-navigation/native'
+import { Feather } from '@expo/vector-icons';
 
 import Cabecalho from "../../components/cabecalho/index";
 import Botao from "../../components/botao/index";
@@ -37,7 +38,11 @@ const Navigator = useNavigation();
       <ScrollView>
 
         <View style={estilo.contentCard}>
-          <Text style={estilo.titulo}>Jogos</Text>
+          <View style={estilo.bar_titulo}>
+            <Text style={estilo.titulo}>Jogos</Text>
+            <Feather name="arrow-right" size={24} color="black" color="#D94C2A" style={{marginLeft:20}} />
+          </View>
+          
         
         <FlatList
         horizontal={true}
@@ -149,6 +154,11 @@ const estilo = StyleSheet.create({
     marginBottom: 20,
     fontWeight:'bold'
   },
+  bar_titulo:{
+    flexDirection: "row",
+    alignItems: "center",
+    width: 100
+  }
 
 
 });

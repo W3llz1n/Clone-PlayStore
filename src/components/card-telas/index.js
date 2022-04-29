@@ -7,7 +7,7 @@ export default function jogos({titulo, valor, imagem}){
         if(desc.length < 27){
             return desc;
         }
-        return `${desc.substring(0, 18)}...`;
+        return `${desc.substring(0, 22)}...`;
     }
 
     return (
@@ -30,9 +30,9 @@ const estilo = StyleSheet.create({
     containerJogos:{
         backgroundColor: "#262223",
         borderRadius: 10,
-        marginTop: 8,
+        marginTop: 5,
         padding: 10,
-        margin: 2,
+        margin: 6,
         alignItems: "center",
         flexDirection: "row",
         justifyContent: "space-between",

@@ -35,9 +35,11 @@ const estilo = StyleSheet.create({
         margin: 2,
         alignItems: "center",
         justifyContent: "space-between",
-        width: 100,
+        width: 110,
         height: 150,
         marginLeft: 8,
+        borderWidth:2,
+        borderColor:"#D94C2A",
     },
     titulo:{
       color: "#fff",
